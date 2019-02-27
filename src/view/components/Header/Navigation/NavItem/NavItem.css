@@ -1,0 +1,34 @@
+.NavItem {
+  height: 100%;
+  width: 20%;
+}
+
+.NavLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 8px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  transition: 300ms;
+}
+
+.activeLink {
+  border-bottom: 2px solid white;
+}
+
+.ActiveNavLink {
+  border-bottom: 3px solid white;
+  text-align: center;
+}
+
+@media (max-width: 400px) {
+  .NavItem {
+  height: 100%;
+  width: 18%;
+}
+}

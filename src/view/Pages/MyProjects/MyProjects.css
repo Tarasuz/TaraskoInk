@@ -1,0 +1,147 @@
+.MyProjects {
+  padding: 1em 0;
+  grid-area: myprojects;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas: ". myprojectslist  myprojectslist myprojectslist myprojectslist myprojectslist myprojectslist myprojectslist myprojectslist myprojectslist myprojectslist .";
+}
+
+.MyProjectsHeader {
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0;
+  font-size: 42px;
+  margin-left: -2.63px;
+  line-height: 1.04;
+  letter-spacing: -0.015em;
+  grid-area: myprojectsheader;
+}
+
+.MyProjectsList {
+  grid-area: myprojectslist;
+  height: calc(97vh - 67.5px);
+  display: grid;
+  grid-gap: 16px;
+  padding: 16px 0;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: "projects1  projects1 projects2 projects2" "projects1  projects1 projects2 projects2" "projects3  projects3 projects4 projects4" "projects3  projects3 projects4 projects4";
+}
+
+.portfolioProject {
+  background: url(../../../assets/portfolioproject.jpg);
+  background-size: cover;
+  border-radius: 5px 5px 0 0;
+  height: 12rem;
+  box-shadow: inset rgba(0, 0, 0, 0.2) 0 64px 64px 16px;
+}
+
+.YPSProject {
+  background: url(../../../assets/YPS.jpg);
+  background-size: cover;
+  border-radius: 5px 5px 0 0;
+  height: 12rem;
+  box-shadow: inset rgba(0, 0, 0, 0.2) 0 64px 64px 16px;
+}
+
+.marioPlanProject {
+  background: url(../../../assets/marioPlanProject.jpg);
+  background-size: cover;
+  border-radius: 5px 5px 0 0;
+  height: 12rem;
+  box-shadow: inset rgba(0, 0, 0, 0.2) 0 64px 64px 16px;
+}
+
+.burgerBuilder {
+  background: url(../../../assets/burger-builder.jpg);
+  background-size: cover;
+  border-radius: 5px 5px 0 0;
+  height: 12rem;
+  box-shadow: inset rgba(0, 0, 0, 0.2) 0 64px 64px 16px;
+}
+
+.projectContent {
+  color: #808181;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: calc(100% - 12rem);
+}
+
+.projectHeader {
+  margin: 0;
+  color: #40424a;
+}
+
+.projectDescription {
+  margin: 0;
+}
+
+.projectCollaterals {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projectLinks {
+  display: flex;
+}
+
+.projectLink {
+  color: #21273d;
+  padding-right: 8px;
+}
+
+.projectLink svg {
+  transition: 0.3s;
+}
+
+.projectLink svg:hover {
+  transform: scale(1.2);
+}
+
+.projectsTechStack {
+  display: flex;
+}
+
+.projectsTechStackItem {
+  padding: 5px;
+  margin-left: 5px;
+  border-radius: 8px;
+  border: 1px solid;
+}
+
+@media (min-width: 1700px) {
+  .portfolioProject {
+    height: 15rem;
+  }
+  .YPSProject {
+    height: 15rem;
+  }
+  .marioPlanProject {
+    height: 15rem;
+  }
+  .burgerBuilder {
+    height: 15rem;
+  }
+  .projectContent {
+    height: calc(100% - 15rem);
+  }
+}
+
+@media (min-width: 0px) and (max-width: 900px) {
+  .MyProjectsList {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "projects1" "projects2" "projects3" "projects4";
+  }
+}
+
+@media (max-width: 1026px) {
+  .MyProjectsList {
+    height: auto;
+  }
+}

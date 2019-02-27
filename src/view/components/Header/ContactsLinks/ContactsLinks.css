@@ -1,0 +1,18 @@
+.ContactsList {
+    display: flex;
+    width: 20%;
+}
+
+.ContactsItem {
+    margin: 0 10px;
+}
+
+.ContactLink {
+    color: white;
+}
+
+@media (max-width: 500px) {
+    .ContactLink {
+        width: 18%;
+    }
+  }

@@ -1,0 +1,184 @@
+.PersonalInfo {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-family: "Josefin Sans", sans-serif;
+  color: #40424a;
+}
+
+.PersonalInfo h1 {
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-size: 160px;
+  line-height: normal;
+}
+
+.PersonalInfo h2 {
+  margin-top: 0;
+  color: #40424a;
+  margin: 0;
+  font-weight: 600;
+  margin-bottom: 30px;
+  font-size: 48px;
+}
+
+.PersonalInfo h3 {
+  margin-top: 0;
+  font-size: 33px;
+  margin-bottom: 48px;
+  color: #808181;
+}
+
+.PersonalInfo li {
+  line-height: 1.5;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.618em;
+}
+
+.PersonalInfo li span {
+  color: #808181;
+  min-width: 363px;
+  font-weight: 400;
+  display: inline-block;
+  margin-left: 16px;
+}
+
+.PersonalInfo p {
+  letter-spacing: 0.01rem;
+  font-weight: 400;
+  line-height: 1.3;
+  text-align: left;
+}
+
+.PersonalInfoButtons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.DownloadCVButton {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 80px;
+  max-width: 250px;
+  text-transform: uppercase;
+  border: 1px solid #21273d;
+  color: #21273d;
+  background: #f2f7f8;
+  transition: 0.3s;
+}
+
+.ButtonWrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.DownloadCVButton:hover {
+  border: 1px solid #21273d;
+  color: white;
+  background: #21273d;
+}
+
+.DownloadCVButton:focus {
+  outline: 0;
+}
+
+.PersonalInfoPhoto {
+  max-height: 900px;
+  max-width: 600px;
+} 
+
+@media (min-width: 0) and (max-width: 480px) {
+  .DownloadCVButton {
+    max-width: none;
+  }
+}
+
+@media (max-width: 1025px) {
+  .PersonalInfo h1 {
+    margin-top: 0.4em;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .PersonalInfo h1 {
+    font-size: 120px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .PersonalInfo h1 {
+    font-size: 80px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .PersonalInfo h1 {
+    margin-top: 0.4em;
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 0) and (max-width: 480px) {
+  .PersonalInfo li {
+    flex-direction: column;
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 1026px) {
+  .PersonalInfoPhoto {
+    display: none;
+  }
+}
+
+@media (max-width: 1026px) {
+  .GeneralInfo {
+    display: flex;
+  }
+  .PersonalInfo li {
+    flex-direction: column;
+  }
+  .GeneralInfoList {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .PersonalInfo li span {
+    max-width: none;
+    margin: 0;
+  }
+  .PersonalInfoPhoto {
+    width: 50%;
+  }
+}
+
+@media (max-width: 661px) {
+  .PersonalInfoPhoto {
+    display: none;
+  }
+  .PersonalInfo li {
+    flex-direction: column;
+  }
+  .GeneralInfoList {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .PersonalInfo li span {
+    max-width: none;
+    min-width: auto;
+    margin: 0;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 661px) {
+  .PersonalInfo li {
+    flex-direction: row;
+  }
+}
+

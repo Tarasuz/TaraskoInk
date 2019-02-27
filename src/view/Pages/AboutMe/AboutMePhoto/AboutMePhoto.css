@@ -1,0 +1,42 @@
+.AboutMePhoto {
+  height: 100%;
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-image: url(../../../../assets/me4.jpg), url(../../../../assets/me44.png);
+  background-size: 100%;
+  background-color: #21273d;
+  background-blend-mode: hard-light, darken;
+}
+
+.AboutMePhoto img {
+  width: 100%;
+  mix-blend-mode: soft-light;
+}
+
+@media (min-width: 1025px) {
+  .AboutMePhoto {
+    justify-content: flex-end;
+  }
+  .AboutMePhoto img {
+    width: 94%;
+    max-height: 100%;
+  }
+}
+
+@media (min-width: 1500px) {
+  .AboutMePhoto {
+    justify-content: flex-end;
+  }
+  .AboutMePhoto img {
+    width: 85%;
+  }
+}
+
+@media (max-width: 661px) {
+  .AboutMePhoto {
+    margin-top: 8px;
+    min-height: 500px;
+  }
+}
+
+

@@ -1,0 +1,23 @@
+.Logo {
+  display: flex;
+  height: 100%;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  text-decoration: none;
+  color: antiquewhite;
+  align-items: center;
+  grid-area: logo;
+}
+
+.Logo a {
+  height: 100%;
+}
+
+.Logo img {
+  height: 100%;
+}
+
+@media (max-width: 550px) {
+  .Logo {
+    display: none;
+  }
+}

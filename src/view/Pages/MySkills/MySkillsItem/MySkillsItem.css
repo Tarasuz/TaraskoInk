@@ -1,0 +1,24 @@
+.SkillItem {
+    min-width: 300px;
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #21273d;
+    margin: 0.5em 0;
+}
+
+.SkillHeading {
+    font-size: 2em;
+    color: #40424a;
+    margin: 1em 0 0 0;
+    text-align: center;
+}
+
+.SkillSubHeading {
+    margin-top: 5px; 
+    font-size: 1.2em;
+    color: #808181;
+    margin: 0;
+    text-align: center;
+}
